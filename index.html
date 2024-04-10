@@ -7,12 +7,75 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
   height: 100%;
   color: #777;
   line-height: 1.8;
+}
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* Create a Parallax Effect */
@@ -115,31 +178,88 @@ body, html {
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="models">
-  <h3 class="w3-center">MODELS</h3>
-  <h5 class="w3-center">We currently support following models:</h5>
+<div class="container" id="models">
+  <h5 class="w3-center">We currently support the following models:</h5>
+	  <p class="w3-content"><b>Speech-to-Text Translation</b>: Our speech-to-text models are built to translate spoken language into written text of any other target languages. Whether you're looking to translate meetings, interviews, lectures, or any other spoken content, our models can be used for such tasks. As of now our trained models include language support of Hindi, Bengali, Gujrati, Marathi, Tamil and Nepali. </p><br>
+  <p class="w3-content"><b>  Text Summarization</b>: Additionally, our text summarization models take the hassle out of condensing lengthy texts into concise summaries. What sets our models apart is their ability to summarize from English to Hindi directly, making them ideal for users who work with multilingual content.</p><br>
+  <p class="w3-content"><b>  Sanskrit to Hindi MT</b>: Text generation model to translate the ancient language Sanskrit to Hindi.</p><br>
 
-  <div class='w3-center'>
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-hover-opacity w3-margin-right"><a href="s2t_trans.html" style="text-decoration:none">Speech2Text</a></span>
+	
+         <div class="card__container">
+            <article class="card__article">
+               <div class="card__scale-1"></div>
+               <div class="card__scale-2"></div>
 
+               <div class="card__shape-1">
+                  <div class="card__shape-2"></div>
+                  <div class="card__shape-3">
+                     <i class="ri-mic-line card__icon"></i>
+                  </div>
+               </div>
+   
+               <div class="card__data">
+                  <h2 class="card__title">Speech to Text</h2>
+                  
+                  <p class="card__description">
+                     Translate speech in english to indic text.
+                  </p>
 
-  </div>
+                  <a href="s2t_trans.html" class="card__button">
+                     Run This Model
+                  </a>
+               </div>
+            </article>
+   
+            <article class="card__article card__orange">
+               <div class="card__scale-1"></div>
+               <div class="card__scale-2"></div>
 
+               <div class="card__shape-1">
+                  <div class="card__shape-2"></div>
+                  <div class="card__shape-3">
+                     <i class="ri-file-copy-2-line card__icon"></i>
+                  </div>
+               </div>
+   
+               <div class="card__data">
+                  <h2 class="card__title">Summariser</h2>
 
-  <p ><b>Speech-to-Text Translation</b>: Our speech-to-text models are built to translate spoken language into written text of any other target languages. Whether you're looking to translate meetings, interviews, lectures, or any other spoken content, our models can be used for such tasks. As of now our trained models include language support of Hindi, Bengali, Gujrati, Marathi, Tamil and Nepali. </p><br>
+                  <p class="card__description">
+                     Summarise a paragraph in english directly to indic text.
+                  </p>
 
-  <div class='w3-center'>
-        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-hover-opacity w3-margin-right"><a href="summ.html" style="text-decoration:none">Summariser</a></span>
-    </div>
-  <p><b>  Text Summarization</b>: Additionally, our text summarization models take the hassle out of condensing lengthy texts into concise summaries. What sets our models apart is their ability to summarize from English to Hindi directly, making them ideal for users who work with multilingual content.</p><br>
+                  <a href="summ.html" class="card__button">
+                     Run This Model
+                  </a>
+               </div>
+            </article>
+   
+            <article class="card__article card__green">
+               <div class="card__scale-1"></div>
+               <div class="card__scale-2"></div>
 
-  <div class='w3-center'>
-        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-hover-opacity w3-margin-right"><a href="sanmt.html" style="text-decoration:none">Sanskrit NMT</a></span>
-    </div>
-  <p><b>  Sanskrit to Hindi MT</b>: Text generation model to translate the ancient language Sanskrit to Hindi.</p><br>
+               <div class="card__shape-1">
+                  <div class="card__shape-2"></div>
+                  <div class="card__shape-3">
+                     <i class="ri-translate card__icon"></i>
+                  </div>
+               </div>
+   
+               <div class="card__data">
+                  <h2 class="card__title">Sanskrit NMT</h2>
 
+                  <p class="card__description">
+                     Translate text in sanskrit to hindi.
+                  </p>
 
-
+                  <a href="sanmt.html" class="card__button">
+                     Run This Model
+                  </a>
+               </div>
+            </article>
+         </div>
+	
+	
 
 </div>
 
@@ -158,6 +278,63 @@ body, html {
      <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
   </div>
 </div>
+
+
+<div class="w3-container w3-padding-40 w3-center" id="team">
+<h2>AI LAB MEMBERS</h2>
+
+<div class="w3-row-padding"><br>
+
+<div class="w3-quarter">
+  <img src="images/kpd.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+  
+  <h3>Kamanksha Prasad Dubey</h3>
+<i class="fa fa-github w3-hover-opacity" style="font-size: 25px;"></i>
+  <h6>PhD Student</h6>
+</div>
+
+<div class="w3-quarter">
+  <img src="images/am.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+  <h3>Ankit Malviya</h3>
+<i class="fa fa-github w3-hover-opacity" style="font-size: 25px;"></i>
+  <h6>PhD Student</h6>
+</div>
+
+<div class="w3-quarter">
+  <img src="images/ns.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+  <h3>Nivedita Sethiya</h3> 
+<i class="fa fa-github w3-hover-opacity" style="font-size: 25px;"></i>
+  <h6>PhD Student</h6>
+</div>
+
+<div class="w3-quarter">
+  <img src="images/ld.jpeg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+  <h3>Lipika Dewangan</h3>
+<i class="fa fa-github w3-hover-opacity" style="font-size: 25px;"></i>
+  <h6>PhD Student</h6>
+</div>
+
+<div class="w3-quarter">
+  <img src="images/aa.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+  <h3>Anshuman Agrahri</h3>
+<i class="fa fa-github w3-hover-opacity" style="font-size: 25px;"></i>
+  <h6>PhD Student</h6>
+</div>
+
+<div class="w3-quarter">
+  <img src="images/bs.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
+  <h3>Balaram Sarkar</h3>
+<a href="https://github.com/balaramas"><i class="fa fa-github w3-hover-opacity" style="font-size: 25px;"></i></a>
+  <p>MS Student</p>
+</div>
+
+</div>
+</div>
+
+
+
+
+
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64" id="contact">
