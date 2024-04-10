@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
@@ -95,7 +97,7 @@ gradio-app {
   <div >
   <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/3.36.1/gradio.js"></script>
   <!-- Gradio component -->
-<gradio-app src="https://balaramas-indic-s2s.hf.space" height="1000px"></gradio-app>
+  <gradio-app src="https://balaramas-indic-s2s.hf.space" height="1000px"></gradio-app>
 
   </div>
 
@@ -103,31 +105,14 @@ gradio-app {
 
 
 <!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="models">
-  <h4 class="w3-center">Due to resource constraints, we're utilizing a simpler model architecture. Please note that this may occasionally lead to less accurate predictions.</h4>
-  <h5 class="w3-center">We currently support following models:</h5>
-
-  <div class='w3-center'>
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-hover-opacity w3-margin-right"><a href="s2t_trans.html" style="text-decoration:none">Speech2Text</a></span>
-  </div>
-
-
-  <p ><b>Speech-to-Text Translation</b>: Our speech-to-text models are built to translate spoken language into written text of any other target languages. Whether you're looking to translate meetings, interviews, lectures, or any other spoken content, our models can be used for such tasks. As of now our trained models include language support of Hindi, Bengali, Gujrati, Marathi, Tamil and Nepali. <br></p><br>
-
-  
-  <div class='w3-center'>
-      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-hover-opacity w3-margin-right"><a href="summ.html" style="text-decoration:none">Summariser</a></span>
-
-</div>
-
-  <p><b>Text Summarization</b>: Additionally, our text summarization models take the hassle out of condensing lengthy texts into concise summaries. What sets our models apart is their ability to summarize from English to Hindi directly, making them ideal for users who work with multilingual content.</p><br>
-
-    <div class='w3-center'>
-        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-hover-opacity w3-margin-right"><a href="sanmt.html" style="text-decoration:none">Sanskrit NMT</a></span>
-    </div>
-  <p><b>  Sanskrit to Hindi MT</b>: Text generation model to translate the ancient language Sanskrit to Hindi.</p><br>
-
-  
+<div class="w3-content" id="models">
+  <h5 class="w3-center">We currently support the following models:</h5>
+  <p class="w3-content"><b>Speech-to-Text Translation</b>: Our speech-to-text models are built to translate spoken language into written text of any other target languages. Whether you're looking to translate meetings, interviews, lectures, or any other spoken content, our models can be used for such tasks. As of now our trained models include language support of Hindi, Bengali, Gujrati, Marathi, Tamil and Nepali. </p><br>
+  <p class="w3-content"><b>  Text Summarization</b>: Additionally, our text summarization models take the hassle out of condensing lengthy texts into concise summaries. What sets our models apart is their ability to summarize from English to Hindi directly, making them ideal for users who work with multilingual content.</p><br>
+  <p class="w3-content"><b>  Sanskrit to Hindi MT</b>: Text generation model to translate the ancient language Sanskrit to Hindi.</p><br>
+<div class='w3-center'>
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity w3-hover-opacity w3-margin-right"><a href="index.html#models" style="text-decoration:none">Browse Models</a></span>
+    </div><br><br>
 </div>
 
 <!-- Modal for full size images on click-->
