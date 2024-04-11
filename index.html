@@ -10,10 +10,107 @@
 <link rel="stylesheet" href="assets/css/styles.css">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 <style>
+
+
+.containerr{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.containerr .card{
+    width: 300px;
+    margin: 15px;
+    background-color: #f5f6f7;
+    box-shadow: -4px -2px 4px 0px #ffffff, 4px 2px 6px 0px #babab5;
+    position: relative;
+    overflow-x: hidden;
+    border-radius: 100px;
+    transition: 1.2s;
+}
+
+.containerr .card:hover{
+    background: linear-gradient(to left, #8e9eab, #eef2f3);
+}
+
+.containerr .card .content{
+    transition: 0.9s;
+}
+
+.containerr .card .content:hover{
+    transform: scale(1.069);
+}
+
+.containerr .card .profile{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px auto;
+    border: 1px solid #f1f8fd;
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.07), -20px -20px 20px rgba(255,255,255,0.7), 6px 6px 6px rgba(0,0,0,0.09), -6px -6px 6px rgba(255,255,255, 0.9);
+}
+
+.containerr .card .profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.containerr .card .detail h2,
+.containerr .card .detail h4{
+    margin: 10px 0;
+}
+
+.containerr .card .social{
+    margin: 15px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.containerr .card .detail .social a{
+    margin: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.containerr .card .social a:hover{
+    background: white;
+}
+
+.containerr .card .social a i{
+    font-size: 21px;
+    color: #495057;
+}
+
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+
+
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
   height: 100%;
-  color: #777;
+  background-image: #777;
   line-height: 1.8;
 }
 
@@ -114,6 +211,12 @@ body, html {
     min-height: 750px;
   }
 } 
+
+p{
+font-size: 16px;
+text-align: justify;
+  text-justify: inter-word;
+}
 </style>
 </head>
 <body>
@@ -151,18 +254,18 @@ body, html {
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT AI LAB</h3>
+  <h2 class="w3-center">ABOUT AI LAB</h2>
   <p class="w3-center"><em></em></p>
-  <p>The AI Lab is dedicated to building state-of-the-art models, tools, and algorithms for next generation technologies. The lab is spearheaded by Chandresh Kumar Maurya. Our main work revolves around using AI, ML, and NLP techniques to solve problems in text, vision, and speech domain. Look at our publications and project pages to know more about our work. We are always on the hunt of talented individuals interested in giving a break in the AI, ML, and NLP field. Shoot an email to <i>chandresh@iiti.ac.in</i> with brief details of your research interest and updated CV.</p>
+  <p style="color: #495057;" >The AI Lab is dedicated to building state-of-the-art models, tools, and algorithms for next generation technologies. The lab is spearheaded by Chandresh Kumar Maurya. Our main work revolves around using AI, ML, and NLP techniques to solve problems in text, vision, and speech domain. Look at our publications and project pages to know more about our work. We are always on the hunt of talented individuals interested in giving a break in the AI, ML, and NLP field. Shoot an email to <i>chandresh@iiti.ac.in</i> with brief details of your research interest and updated CV.</p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>Chandresh Kumar Maurya</b></p><br>
-      <img src="images/Chandresh.jpg" class="w3-round w3-image " alt="Photo of Me" width="270" height="333">
+      <p class="w3-center"><b><i class="fa fa-user w3-margin-right"></i>Chandresh Kumar Maurya</b></p><br>
+      <img class="floating" src="images/chandresh.png" class="w3-round w3-image " alt="Photo of Me" width="380" height="370">
     </div>
 
     <!-- Hide this text on small devices -->
     <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Dr. Chandresh is passionate about building practical and theoretical models and algorithms for multimodal data (Text+Image+Video+Speech). Why we need to build such a system is that we perceive and interact with our environment through many sensori organs such as eyes, ears, mouth, etc. During his Ph.D at IIT Roorkee, India, he worked on Anomaly Detection in Big Data. His Ph.D was funded by prestigious Prime Minister Fellowship for Doctoral Research. Post-Ph.D, he joined IBM Research India as research scientist working primarily in Natural Language Processing. He worked there for two years and subsequently moved to Budapest, Hungary and joined ELTE University as a research assistant professor. He had a short stint at NIT Delhi before joining IIT Indore in July 2020. He has also worked with Microsoft India R&D and Bosch Research Center, Bangalore.</p>
+      <p style="color: #495057;" >Dr. Chandresh is passionate about building practical and theoretical models and algorithms for multimodal data (Text+Image+Video+Speech). Why we need to build such a system is that we perceive and interact with our environment through many sensori organs such as eyes, ears, mouth, etc. During his Ph.D at IIT Roorkee, India, he worked on Anomaly Detection in Big Data. His Ph.D was funded by prestigious Prime Minister Fellowship for Doctoral Research. Post-Ph.D, he joined IBM Research India as research scientist working primarily in Natural Language Processing. He worked there for two years and subsequently moved to Budapest, Hungary and joined ELTE University as a research assistant professor. He had a short stint at NIT Delhi before joining IIT Indore in July 2020. He has also worked with Microsoft India R&D and Bosch Research Center, Bangalore.</p>
     </div>
   </div>
   
@@ -179,13 +282,13 @@ body, html {
 
 <!-- Container (Portfolio Section) -->
 <div class="container" id="models">
-  <h5 class="w3-center">We currently support the following models:</h5>
-	  <p class="w3-content"><b>Speech-to-Text Translation</b>: Our speech-to-text models are built to translate spoken language into written text of any other target languages. Whether you're looking to translate meetings, interviews, lectures, or any other spoken content, our models can be used for such tasks. As of now our trained models include language support of Hindi, Bengali, Gujrati, Marathi, Tamil and Nepali. </p><br>
-  <p class="w3-content"><b>  Text Summarization</b>: Additionally, our text summarization models take the hassle out of condensing lengthy texts into concise summaries. What sets our models apart is their ability to summarize from English to Hindi directly, making them ideal for users who work with multilingual content.</p><br>
-  <p class="w3-content"><b>  Sanskrit to Hindi MT</b>: Text generation model to translate the ancient language Sanskrit to Hindi.</p><br>
+  <h3 class="w3-center" style="color: #495057;"><b>We currently support the following models:</b></h3>
+  <p class="w3-content" style="color: #495057;"><b>Speech-to-Text Translation</b>: Our speech-to-text models are built to translate spoken language into written text of any other target languages. Whether you're looking to translate meetings, interviews, lectures, or any other spoken content, our models can be used for such tasks. As of now our trained models include language support of Hindi, Bengali, Gujrati, Marathi, Tamil and Nepali. </p><br>
+  <p class="w3-content" style="color: #495057;"><b>  Text Summarization</b>: Additionally, our text summarization models take the hassle out of condensing lengthy texts into concise summaries. What sets our models apart is their ability to summarize from English to Hindi directly, making them ideal for users who work with multilingual content.</p><br>
+  <p class="w3-content" style="color: #495057;"><b>  Sanskrit to Hindi MT</b>: Text generation model to translate the ancient language Sanskrit to Hindi.</p><br>
 
 	
-         <div class="card__container">
+         <div class="card__container floating">
             <article class="card__article">
                <div class="card__scale-1"></div>
                <div class="card__scale-2"></div>
@@ -262,7 +365,7 @@ body, html {
 	
 
 </div>
-
+<br><br><br><br><br><br>
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
@@ -280,58 +383,110 @@ body, html {
 </div>
 
 
-<div class="w3-container w3-padding-40 w3-center" id="team">
-<h2>AI LAB MEMBERS</h2>
+<div class="w3-container w3-padding-40 w3-center w3-padding-64" id="team">
+<h2 style="color: #495057;">AI LAB MEMBERS</h2>
 
-<div class="w3-row-padding"><br>
 
-<div class="w3-quarter">
-  <img src="images/kpd.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
-  
-  <h3>Kamanksha Prasad Dubey</h3>
-<a href="https://github.com/kpdubey"><i class="fa fa-github w3-hover-opacity" style="font-size: 25px;"></i></a>
-  <h6>PhD Student</h6>
 </div>
 
-<div class="w3-quarter">
-  <img src="images/am.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
-  <h3>Ankit Malviya</h3>
-<a href="https://github.com/AnkitMalviya"><i class="fa fa-github w3-hover-opacity" style="font-size: 25px;"></i></a>
-  <h6>PhD Student</h6>
-</div>
-
-<div class="w3-quarter">
-  <img src="images/ns.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
-  <h3>Nivedita Sethiya</h3> 
-<a href="https://github.com/Nivedita5"><i class="fa fa-github w3-hover-opacity" style="font-size: 25px;"></i></a>
-  <h6>PhD Student</h6>
-</div>
-
-<div class="w3-quarter">
-  <img src="images/ld.jpeg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
-  <h3>Lipika Dewangan</h3>
-<a href="https://github.com/Lipika-Dewangan"><i class="fa fa-github w3-hover-opacity" style="font-size: 25px;"></i></a>
-  <h6>PhD Student</h6>
-</div>
-
-<div class="w3-quarter">
-  <img src="images/aa.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
-  <h3>Anshuman Agrahri</h3>
-<a href="https://github.com/aagrahri"><i class="fa fa-github w3-hover-opacity" style="font-size: 25px;"></i></a>
-  <h6>PhD Student</h6>
-</div>
-
-<div class="w3-quarter">
-  <img src="images/bs.jpg" alt="Boss" style="width:35%" class="w3-circle w3-hover-opacity">
-  <h3>Balaram Sarkar</h3>
-<a href="https://github.com/balaramas"><i class="fa fa-github w3-hover-opacity" style="font-size: 25px;"></i></a>
-  <p>MS Student</p>
-</div>
-
-</div>
-</div>
-
-
+<div class="containerr">
+        <div class="card">
+            <div class="content">
+                <div class="profile">
+                    <img src="images/ld.jpeg" alt="">
+                </div>
+                <div class="detail">
+                    <h2 style="color:#495057;">Lipika Dewangan</h2>
+                    <h4 style="color:#495057;">PhD Student</h4>
+                    <div class="social">
+                        <a href="https://github.com/Lipika-Dewangan"><i class="fa fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/lipika-dewangan-3214871b8/"><i class="fa fa-linkedin"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="profile">
+                    <img src="images/kpd.jpg" alt="">
+                </div>
+                <div class="detail">
+                    <h2 style="color:#495057;">K.P Dubey</h2>
+                    <h4 style="color:#495057;">PhD Student</h4>
+                    <div class="social">
+                        <a href="https://github.com/kpdubey"><i class="fa fa-github"></i></a>
+                        <a href="www.linkedin.com/in/kamanksha-prasad-dubey-335089a8"><i class="fa fa-linkedin"></i></a>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="profile">
+                    <img src="images/am.jpg" alt="">
+                </div>
+                <div class="detail">
+                    <h2 style="color:#495057;">Ankit Malviya</h2>
+                    <h4 style="color:#495057;">PhD Student</h4>
+                    <div class="social">
+                        <a href="https://github.com/AnkitMalviya"><i class="fa fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ankitmalviya/"><i class="fa fa-linkedin"></i></a>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+<div class="card">
+            <div class="content">
+                <div class="profile">
+                    <img src="images/aa.jpg" alt="">
+                </div>
+                <div class="detail">
+                    <h2 style="color:#495057;">Anshuman Agrahri</h2>
+                    <h4 style="color:#495057;">PhD Student</h4>
+                    <div class="social">
+                        <a href="https://github.com/aagrahri"><i class="fa fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/anshuman-agrahri-71450565/"><i class="fa fa-linkedin"></i></a>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="profile">
+                    <img src="images/ns.jpg" alt="">
+                </div>
+                <div class="detail">
+                    <h2 style="color:#495057;">Nivedita Sethiya</h2>
+                    <h4 style="color:#495057;">PhD Student</h4>
+                    <div class="social">
+                        <a href="https://github.com/Nivedita5"><i class="fa fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/nivedita1991/"><i class="fa fa-linkedin"></i></a>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <div class="profile">
+                    <img src="images/bs.jpg" alt="">
+                </div>
+                <div class="detail">
+                    <h2 style="color:#495057;">Balaram Sarkar</h2>
+                    <h4 style="color:#495057;">MS Student</h4>
+                    <div class="social">
+                        <a href="https://github.com/balaramas"><i class="fa fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/balaram-sarkar-8a8a391a8/"><i class="fa fa-linkedin"></i></a>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -368,7 +523,7 @@ body, html {
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
-  <p>© AI LAB IITI, 2024</p>
+  <p class="w3-center">© AI LAB IITI, 2024</p>
 </footer>
  
 <script>
