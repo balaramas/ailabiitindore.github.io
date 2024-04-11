@@ -42,7 +42,7 @@ a {
 .container {
   display: grid;
   place-items: center;
-  margin-inline: 1.5rem;
+  margin-inline: .5rem;
 }
 
 .card__container, .card__article {
