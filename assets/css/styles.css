@@ -6,8 +6,8 @@
   /*Color mode HSL(hue, saturation, lightness)*/
   --white-color: #fff;
   --black-color: hsl(210, 12%, 15%);
-  --body-color: hsl(240, 100%, 99%);
-  --container-color: #615c6e;
+  --body-color: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  --container-color: #101e3b;
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Poppins", sans-serif;
