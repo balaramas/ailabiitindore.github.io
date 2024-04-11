@@ -10,6 +10,16 @@
 <link rel="stylesheet" href="assets/css/styles.css">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 <style>
+
+.myapp{
+    width: 100%;
+    max-width: 1700px;
+    box-shadow: 1px 1px 4px 0px #ffffff, 4px 2px 6px 3px #babab5;
+    position: relative;
+    overflow-x: hidden;
+    border-radius: 100px;
+}
+  
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
   height: 100%;
@@ -93,11 +103,11 @@ gradio-app {
     <a href="#" class="w3-bar-item w3-button">SEARCH</a>
   </div>
 </div>
-
+<br>
   <div >
   <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/3.36.1/gradio.js"></script>
   <!-- Gradio component -->
-  <gradio-app src="https://balaramas-indic-s2s.hf.space" height="1000px"></gradio-app>
+  <gradio-app class="myapp" src="https://balaramas-indic-s2s.hf.space" height="1000px"></gradio-app>
 
   </div>
 
